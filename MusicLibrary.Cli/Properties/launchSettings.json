@@ -1,0 +1,36 @@
+{
+  "profiles": {
+    "Scan LiteDB": {
+      "commandName": "Project",
+      "commandLineArgs": "scan -d litedb -i C:\\Users\\tomas\\Music\\MusicBee\\Playlists -o C:\\Users\\tomas\\Downloads\\sqlite-litedb\\"
+    },
+    "Read playlist LiteDB": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d litedb -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\musiclibrary.litedb -c readplaylist -a \"C:\\Users\\tomas\\Music\\MusicBee\\Playlists\\DJ Sets\\2020\\2020-08-30 Entre Arcos Marathon.m3u\""
+    },
+    "Delete from SQLite": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d sqlite -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\musiclibrary.sqlite -c batchdelete -a 1000"
+    },
+    "Batch Delete from LiteDB": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d litedb -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\musiclibrary.litedb -c batchdelete -a 1000"
+    },
+    "Single Delete from LiteDB": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d litedb -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\musiclibrary.litedb -c singledelete -a 1000"
+    },
+    "Tracks by genre from LiteDB": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d litedb -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\musiclibrary.litedb -c bygenre -a \"Tango\""
+    },
+    "Tracks by genre from SQLite": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d sqlite -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\musiclibrary.sqlite -c bygenre -a \"Tango\""
+    },
+    "Read track by Uri from LiteDB": {
+      "commandName": "Project",
+      "commandLineArgs": "test -d litedb -i  C:\\Users\\tomas\\Downloads\\sqlite-litedb\\importtest.litedb -c readtrack -a \"C:\\Users\\tomas\\Music\\Library\\Craig Einhorn - Milonguea del Ayer.mp3\""
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+	<PackageReference Include="LanguageExt.Core" Version="3.4.15"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicLibrary.Metadata\MusicLibrary.Metadata.csproj" />
+    <ProjectReference Include="..\MusicLibrary.Persistence.LiteDb\MusicLibrary.Persistence.LiteDb.csproj" />
+    <ProjectReference Include="..\MusicLibrary.Persistence.SqliteNet\MusicLibrary.Persistence.SqliteNet.csproj" />
+    <ProjectReference Include="..\MusicLibrary\MusicLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
